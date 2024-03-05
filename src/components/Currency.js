@@ -2,7 +2,8 @@ import React, { useContext } from 'react';
 import { AppContext } from '../context/AppContext';
 
 const Currency = () => {
-  const {dispatch } = useContext(AppContext);
+  // eslint-disable-next-line
+  const {dispatch, Currency } = useContext(AppContext);
 
     const changeCurrency = (val)=>{
             dispatch({
